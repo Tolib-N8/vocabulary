@@ -7,7 +7,8 @@ on:
 
 jobs:
   build:
-    runs-on: macos-15
+    # Expo SDK 57 needs Swift 6.2, i.e. Xcode 26 — the default on macos-26 runners
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
 
